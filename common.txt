@@ -1,0 +1,11 @@
+Run by root:
+hostname <new_hostname_here>
+
+adduser <username>
+sudo adduser <username> sudo
+nano /etc/hosts
+127.0.0.1       localhost localhost.localdomain <new_hostname_here>
+
+#make /dev/random non-blocking
+rm /dev/random
+mknod /dev/random c 1 9

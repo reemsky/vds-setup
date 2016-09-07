@@ -9,3 +9,6 @@ nano /etc/hosts
 #make /dev/random non-blocking
 rm /dev/random
 mknod /dev/random c 1 9
+
+sudo apt-get update
+sudo apt-get install -y build-essential mc git mercurial
